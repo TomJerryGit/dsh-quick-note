@@ -1,5 +1,5 @@
 {
-  "name": "dsh-quick-note",
+  "name": "@tomjerrygit/dsh-quick-note",
   "version": "1.0.0",
   "private": false,
   "description": "Local-first management console for DeepSeek Harness: notes, tasks, flashcards, health records, agent tools, usage/cost insights, savings guard, cleanup, and workspace value analysis.",
