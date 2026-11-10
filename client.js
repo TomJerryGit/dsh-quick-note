@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: 'dsh-quick-note',
+  id: '@tomjerrygit/dsh-quick-note',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
