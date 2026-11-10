@@ -1599,7 +1599,7 @@ async function main() {
     JSON.stringify(interactionStyles.filter((name) => !client.includes(name))),
   );
   const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
-  check('package identity', pkg.name === 'dsh-quick-note' && pkg.dsh.manifestVersion === 1);
+  check('package identity', pkg.name === '@tomjerrygit/dsh-quick-note' && pkg.dsh.manifestVersion === 1);
 
   await home.cleanup();
   report('host tests', lines);
