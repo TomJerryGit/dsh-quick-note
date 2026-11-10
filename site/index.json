@@ -6,7 +6,7 @@
   },
   "plugins": [
     {
-      "name": "dsh-quick-note",
+      "name": "@tomjerrygit/dsh-quick-note",
       "title": {
         "en": "Management console",
         "zh": "管理台"
@@ -24,7 +24,7 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1794302059,
+          "publishTimestamp": 1794302363,
           "source": {
             "type": "npm"
           },
