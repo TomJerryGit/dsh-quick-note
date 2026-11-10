@@ -477,9 +477,9 @@
 ### 从 npm 安装（推荐）
 
 ```sh
-dsh plugin --profile web add dsh-quick-note
+dsh plugin --profile web add @tomjerrygit/dsh-quick-note
 # desktop profile
-dsh plugin --profile desktop add dsh-quick-note
+dsh plugin --profile desktop add @tomjerrygit/dsh-quick-note
 ```
 
 插件市场索引（可添加到 DSH Plugins → Discover）：
@@ -494,7 +494,7 @@ https://tomjerrygit.github.io/dsh-quick-note/index.json
 
 - 安装：插件管理页「安装第三方插件」填本地目录路径，或用 agent 的 `plugin_manager` `install_bundle`。
 - 更新：改完 `client.js` 后浏览器半区通常由 DSH 热更新自动重载；**改了 `index.js`（Host 半区）需要触发热重组装或重启 DSH** 才会加载新代码。
-- 卸载：插件管理页移除 `dsh-quick-note`，或用 `plugin_manager` `remove_bundle`。
+- 卸载：插件管理页移除 `@tomjerrygit/dsh-quick-note`，或用 `plugin_manager` `remove_bundle`。
 
 ## 回归测试（审计后新增）
 
