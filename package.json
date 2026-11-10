@@ -1,0 +1,72 @@
+{
+  "name": "dsh-quick-note",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Local-first management console for DeepSeek Harness: notes, tasks, flashcards, health records, agent tools, usage/cost insights, savings guard, cleanup, and workspace value analysis.",
+  "type": "module",
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node scripts/build-client.mjs",
+    "check": "node scripts/check-build.mjs",
+    "test": "node scripts/build-client.mjs && node scripts/check-build.mjs && node test/run.mjs",
+    "test:smoke": "node test/browser-smoke.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "author": {
+    "name": "TomJerryGit"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomJerryGit/dsh-quick-note.git"
+  },
+  "homepage": "https://github.com/TomJerryGit/dsh-quick-note#readme",
+  "bugs": {
+    "url": "https://github.com/TomJerryGit/dsh-quick-note/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "notes",
+    "tasks",
+    "flashcards",
+    "health",
+    "cost",
+    "productivity",
+    "local-first"
+  ]
+}

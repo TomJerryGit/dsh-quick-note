@@ -1,0 +1,38 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-quick-note",
+    "zh": "管理台"
+  },
+  "plugins": [
+    {
+      "name": "dsh-quick-note",
+      "title": {
+        "en": "Management console",
+        "zh": "管理台"
+      },
+      "description": {
+        "en": "Local-first notes, tasks, flashcards, health records, agent tools, cost insights, savings guard, cleanup, and workspace value analysis.",
+        "zh": "本地优先的笔记、任务、闪卡、健康记录、Agent 工具、费用洞察、省钱护栏、清理与工作区价值分析。"
+      },
+      "icon": "icons/icon.svg",
+      "author": "TomJerryGit",
+      "homepage": "https://github.com/TomJerryGit/dsh-quick-note#readme",
+      "repository": {
+        "url": "https://github.com/TomJerryGit/dsh-quick-note"
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794302059,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    }
+  ]
+}
